@@ -37,8 +37,7 @@
 
 -rabbit_feature_flag(
    {user_limits,
-    #{desc          => "Enables configuring limits on the number of "
-                       "channels/connections for a user",
+    #{desc          => "Configure connection and channel limits for a user",
       stability     => stable,
       migration_fun => {?MODULE, user_limits_migration}
      }}).
